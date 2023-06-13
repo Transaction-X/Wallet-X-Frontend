@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* --third-color: #9bf9f4; */
+
+body{
+
+  background-color: #C3D0F9;
+  /* background-color: blue; */
+}
+ul {
+  padding: 0px;
+}
+/* .main-content{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  border-radius: 20px;
+  background-color: rgba(144, 238, 144, 0.163);
+  padding: 1rem;
+  gap: 1rem;
+} */
+.main{
+  display:flex;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  gap:10px ;
+  padding:20px;
+}
+@media screen and (max-width: 768px) {
+  .main{
+    /* flex-direction:column; */
+    padding: 5px;
+  }
+}
