@@ -15,7 +15,7 @@ export default function Signup() {
     const email = document.getElementById("email").value;
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const response = await fetch("http://localhost:5000/api/auth/createUser", {
+    const response = await fetch("https://wallet-x-backend.vercel.app/api/auth/createUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const Transactions = () => {
   const sidebarProps = useContext(SidebarContext)
   const deleteTransaction = async(_id,isIncome,amount)=> {
     console.log(_id,isIncome,amount)
-    const response = await fetch(`http://localhost:5000/api/transaction/deletetransaction/${_id}`, {
+    const response = await fetch(`https://wallet-x-backend.vercel.app/api/transaction/deletetransaction/${_id}`, {
       method: "PATCH", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
     })

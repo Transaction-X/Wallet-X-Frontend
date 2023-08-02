@@ -16,7 +16,7 @@ const TransactionState = (props)=> {
       try {
         if(profileProps.checkUser) {
           // console.log(profileProps.User,profileProps.checkUser)
-          const res = await fetch(`http://localhost:5000/api/transaction/fetchalltransactions/${profileProps.User._id}`)
+          const res = await fetch(`https://wallet-x-backend.vercel.app/api/transaction/fetchalltransactions/${profileProps.User._id}`)
           const data = await res.json()
           console.log(data)
           setTransactions(data)

@@ -24,7 +24,7 @@ const Expence = () => {
       user:profileProps.User._id
     }
     console.log(expObj)
-    const response = await fetch('http://localhost:5000/api/transaction/addtransaction', {
+    const response = await fetch('https://wallet-x-backend.vercel.app/api/transaction/addtransaction', {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       
